@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Virtual Science Lab 3D</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+
+<body>
+
+<div id="app">
+
+    <div id="topBar">
+        <div>
+            <h1>🔬 Virtual Science Lab 3D</h1>
+            <p>Interactive Virtual Learning Laboratory</p>
+        </div>
+
+        <button id="homeBtn">🏠 Home</button>
+    </div>
+
+    <div id="subjectPanel">
+
+        <button class="subjectBtn" data-subject="physics">
+            ⚡ Physics
+        </button>
+
+        <button class="subjectBtn" data-subject="biology">
+            🧬 Biology
+        </button>
+
+        <button class="subjectBtn" data-subject="chemistry">
+            🧪 Chemistry
+        </button>
+
+        <button class="subjectBtn" data-subject="astronomy">
+            🌌 Astronomy
+        </button>
+
+    </div>
+
+    <div id="experimentPanel">
+
+        <div id="experimentTitle">
+            Select an Experiment
+        </div>
+
+        <div id="experimentButtons"></div>
+
+    </div>
+
+    <div id="experimentControls"></div>
+
+    <div id="infoPanel">
+
+        <h2 id="infoTitle">
+            Virtual Science Lab
+        </h2>
+
+        <p id="infoText">
+            Select a subject and experiment to begin.
+        </p>
+
+    </div>
+
+    <div id="status">
+        Welcome to the Virtual Science Lab
+    </div>
+
+    <button id="clearTable">function 
+        🧹 Clear Table
+    </button>
+
+    <button id="reset">
+        🔄 Reset
+    </button>
+
+</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
+
+<div id="infoText">Select a subject and experiment to begin.</div>
